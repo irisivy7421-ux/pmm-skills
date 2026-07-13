@@ -62,7 +62,7 @@ def main():
     ap = argparse.ArgumentParser(description="测量 Logo 墨迹占比,防二次缩小")
     ap.add_argument("path", help="单个图片,或一个目录(批量测所有 png/jpg)")
     ap.add_argument("--json", help="把结果写到该 json 文件(作为基线)")
-    ap.add_argument("--baseline", help="与该基线 json 逐文件对比,超 ±3% 报警")
+    ap.add_argument("--baseline", help="与该基线 json 逐文件对比,超 ±3%% 报警")
     args = ap.parse_args()
 
     if os.path.isdir(args.path):
